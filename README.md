@@ -4,7 +4,7 @@
 ## Purpose
 ZoomBot was designed for the Society for Creative Anachronism's (SCA's) Polit University Online event, run by the [Barony of Politarchopolis](https://politarchopolis.lochac.sca.org/). This event ran several classrooms in parallel using [Zoom's](https://zoom.us/) Breakout Rooms feature. At time of writing, the Zoom API does not allow users to move themselves between Breakout Rooms either in the UI or programatically, so this program uses the Zoom Chat. Commands should be of the form:
 
-AssignMeTo: <RoomName>
+AssignMeTo: RoomName
 
 I'm adding the software to a GitHub after completion of the event because several participants expressed an interest in using and modifying the software further.
 
@@ -43,11 +43,11 @@ From here, the ZoomBot should set up the meeting for you by opening the chat, se
 
 You can test whether the bot is working correctly by using the commands. Have a user send a message through the chat using the "Move Phrase"
 
-AssignMeTo: <RoomName>
+AssignMeTo: RoomName
 
-If <RoomName> is one of the breakout rooms, ZoomBot should detect the message and assign the user to the room. Once breakout rooms have been opened, you can broadcast messages to all breakout rooms using the "Broadcast Phrase"
+If RoomName is one of the breakout rooms, ZoomBot should detect the message and assign the user to the room. Once breakout rooms have been opened, you can broadcast messages to all breakout rooms using the "Broadcast Phrase"
 
-Broadcast: <Message>
+Broadcast: Message
 
 I've included some common-sense error checks for things like misspelled rooms and users who have names that are too long (so that you can't identify who needs to move based on their name). I've also done some rudimentary commenting in the code and listed known bugs in scaroomassign.py but hopefully you shouldn't have any trouble. If the ZoomBot fails mid-meeting, you can just re-run "python3 scaroomassign.py" and the ZoomBot can pick up from where it left off (as long as you haven't closed the chrome tab). 
 
