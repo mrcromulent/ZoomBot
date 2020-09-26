@@ -1,8 +1,12 @@
 # ZoomBot
  Selenium + Zoom Breakout Room Reassigning Tool
+ 
+## UPDATE (26/09/2020)
+
+Zoom have announced that users will be able to self-select their assigned breakout room using the Zoom app as of the Sept. 28th 2020 [update](https://support.zoom.us/hc/en-us/articles/201361953). Thank you to Github user MoralCode for pointing this out.
 
 ## Purpose
-ZoomBot was designed for the Society for Creative Anachronism's (SCA's) Polit University Online event, run by the [Barony of Politarchopolis](https://politarchopolis.lochac.sca.org/). This event ran several classrooms in parallel using [Zoom's](https://zoom.us/) Breakout Rooms feature. At time of writing, the Zoom API does not allow users to move themselves between Breakout Rooms either in the UI or programatically, so this program uses the Zoom Chat. Commands should be of the form:
+ZoomBot was designed for the Society for Creative Anachronism's (SCA's) Polit University Online event, run by the [Barony of Politarchopolis](https://politarchopolis.lochac.sca.org/). This event ran several classrooms in parallel using [Zoom's](https://zoom.us/) Breakout Rooms feature. ~~At time of writing, the Zoom API does not allow users to move themselves between Breakout Rooms either in the UI or programatically~~ (See above), so this program uses the Zoom Chat. Commands should be of the form:
 
 AssignMeTo: RoomName
 
